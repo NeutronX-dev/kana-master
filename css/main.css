@@ -2,146 +2,157 @@
    so if you want to contribute
      you are welcome to! */
 
-body {
-    margin: 0;
-    background-color: #dac8c8;
-    font-family: sans-serif;
-}
-
-.hide {
-    display: none;
-}
-
-.btn {
-    color: steelblue;
-    text-decoration: none;
-}
-
-.nav {
-    grid-template-columns: repeat(47em);
-    background-color: #f4f4f4;
-    color: rgb(31, 27, 27);
-    columns: 3;
-}
-
-.nav > div {
-    display: grid;
-}
-
-.nav > .logo {
-    justify-content: left;
-    margin: 1em;
-    height: 1.4em;
-}
-
-.nav > .score {
-    justify-content: center;
-}
-
-.nav > .settings {
-    text-align: center;
-    margin-right: 1em;
-}
-
-.nav > .settings > a {
-    align-items: center;
-    justify-content: center;
-}
-
-.main {
-    margin-top: 2em;
-    display: block;
-    justify-content: center;
-    justify-self: center;
-    text-align: center;
-}
-
-.main > h1 {
-    font-size: 10em;
-    color: #918282;
-    text-transform: uppercase;
-    display: block;
-    margin: 0;
-}
-
-.main > input {
-    background-color: #f4f4f4;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 4px;
-    font-size: 2em;
-    height: 1.5em;
-    border:none;
-    width: 6em;
-}
-
-.settings {
-    grid-template-columns: repeat(47em);
-    color: rgb(31, 27, 27);
-    columns: 2;
-}
-
-.settings > div > h1 {
-    text-transform: uppercase;
-    text-align: center;
-    color: #918282;
-    display: block;
-    font-size: 1.5em;
-    margin: 0;
-}
-
-.settings > div {
-    display:grid;
-    columns: 2;
-    height: 3em;
-}
-
-.settings > div > div {
-    justify-content: center;
-    justify-self: center;
-    margin: 1em;
-}
-
-.settings > div > div {
-    color: #784141;
-}
-
-/*
-    Checkbox made by
-      Cenk YAGMUR
-    (stackoverflow)
-*/
-
-input[type=checkbox] {
-    position: relative;
-    cursor: pointer;
-    margin-right: 1em;
-}
-
-input[type=checkbox]:before {
-   content: "";
-   display: block;
-   position: absolute;
-   width: 16px;
-   height: 16px;
-   top: 0;
-   left: 0;
-   border: 2px solid #555555;
-   border-radius: 3px;
-   background-color: white;
-}
-
-input[type=checkbox]:checked:after {
-   content: "";
-   display: block;
-   width: 5px;
-   height: 10px;
-   border: solid black;
-   border-width: 0 2px 2px 0;
-   -webkit-transform: rotate(45deg);
-   -ms-transform: rotate(45deg);
-   transform: rotate(45deg);
-   position: absolute;
-   top: 2px;
-   left: 6px;
-}
+     body {
+        margin: 0;
+        background-color: #dac8c8;
+        font-family: sans-serif;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .btn {
+        color: steelblue;
+        text-decoration: none;
+    }
+    
+    .nav {
+        grid-template-columns: repeat(47em);
+        background-color: #f4f4f4;
+        color: rgb(31, 27, 27);
+        columns: 3;
+    }
+    
+    .nav > div {
+        display: grid;
+    }
+    
+    .nav > .logo {
+        justify-content: left;
+        margin: 1em;
+        height: 1.4em;
+    }
+    
+    .nav > .score {
+        justify-content: center;
+    }
+    
+    .nav > .settings {
+        text-align: center;
+        margin-right: 1em;
+    }
+    
+    .nav > .settings > a {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main {
+        margin-top: 2em;
+        display: block;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+    
+    .main > h1 {
+        font-size: 10em;
+        color: #918282;
+        text-transform: uppercase;
+        display: block;
+        margin: 0;
+    }
+    
+    .main > p > span {
+        color:#FF7F50;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .main > p > .answer {
+        text-transform: lowercase;
+        font-weight: bold;
+    }
+    
+    .main > input {
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 2em;
+        height: 1.5em;
+        border:none;
+        width: 6em;
+    }
+    
+    .settings {
+        grid-template-columns: repeat(47em);
+        color: rgb(31, 27, 27);
+        columns: 2;
+    }
+    
+    .settings > div > h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: #918282;
+        display: block;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    
+    .settings > div {
+        display:grid;
+        columns: 2;
+        height: 3em;
+    }
+    
+    .settings > div > div {
+        justify-content: center;
+        justify-self: center;
+        margin: 1em;
+    }
+    
+    .settings > div > div {
+        color: #784141;
+    }
+    
+    /*
+        Checkbox made by
+          Cenk YAGMUR
+        (stackoverflow)
+    */
+    
+    input[type=checkbox] {
+        position: relative;
+        cursor: pointer;
+        margin-right: 1em;
+    }
+    
+    input[type=checkbox]:before {
+       content: "";
+       display: block;
+       position: absolute;
+       width: 16px;
+       height: 16px;
+       top: 0;
+       left: 0;
+       border: 2px solid #555555;
+       border-radius: 3px;
+       background-color: white;
+    }
+    
+    input[type=checkbox]:checked:after {
+       content: "";
+       display: block;
+       width: 5px;
+       height: 10px;
+       border: solid black;
+       border-width: 0 2px 2px 0;
+       -webkit-transform: rotate(45deg);
+       -ms-transform: rotate(45deg);
+       transform: rotate(45deg);
+       position: absolute;
+       top: 2px;
+       left: 6px;
+    }
