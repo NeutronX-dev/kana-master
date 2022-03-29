@@ -165,7 +165,7 @@ document.addEventListener("keyup", (ev) => {
                         word = best.word;
                     }
                 }
-                alert(`Word: ${word}\nAvarage Response Time: ${window.KaNa.main.session_data[word].avarage_answer_time}\nAnswered: ${window.KaNa.main.session_data[word].answer_times.length}\nTimes Right: ${window.KaNa.main.session_data[word].answered_right}\nTimes Wrong: ${window.KaNa.main.session_data[word].answered_wrong}`);
+                alert(`Word: ${word}\nAvarage Response Time: ${window.KaNa.main.session_data[word].avarage_answer_time/1000}s\nAnswered: ${window.KaNa.main.session_data[word].answer_times.length}\nTimes Right: ${window.KaNa.main.session_data[word].answered_right}\nTimes Wrong: ${window.KaNa.main.session_data[word].answered_wrong}`);
             } else {
                 alert("Word not Found...");
             }
